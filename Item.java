@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * This class is part of the "Maze University" application. 
  * "Maze University" is a basic, text based adventure game.  
- * Write a description of class Item here.
+ * 
  * 
  * An "item" represents every item you can find in this game, for each item there 
  * is a description and its weight.
