@@ -1,0 +1,12 @@
+﻿To Submit -
+        ◦ list the elements implemented for B level
+        ◦ list the elements implemented for A level
+        ◦ list the elements implemented for Extra Credit
+
+Elements implemented for B level:
+Added items to your game. Each room has two items or more. Items have description and weight. When printing room info, Item is included.
+Made it so rooms can hold multiple items.
+Implemented the back command (back one room)
+
+Did not implement for A Level.
+Did not implement for Extra Credit.
