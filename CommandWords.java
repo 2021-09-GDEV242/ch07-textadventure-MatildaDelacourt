@@ -1,14 +1,14 @@
 import java.util.HashMap;
 
 /**
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.
+ * This class is part of the "Maze University" application. 
+ * "Maze University" is a basic, text based adventure game.
  * 
  * This class holds an enumeration of all command words known to the game.
  * It is used to recognise commands as they are typed in.
  *
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author  Matilda Delacourt
+ * @version 2021.11.01
  */
 
 public class CommandWords
@@ -49,6 +49,7 @@ public class CommandWords
     
     /**
      * Check whether a given String is a valid command word. 
+     * @param aString to word to check if its a valid String.
      * @return true if it is, false if it isn't.
      */
     public boolean isCommand(String aString)
@@ -57,7 +58,7 @@ public class CommandWords
     }
 
     /**
-     * Print all valid commands to System.out.
+     * Print all valid commands to System.out
      */
     public void showAll() 
     {

@@ -1,36 +1,40 @@
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.*;
 
 /**
  * Class Room - a room in an adventure game.
  *
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.  
+ * This class is part of the "Maze University" application. 
+ * "Maze University" is a basic, text based adventure game.  
  *
  * A "Room" represents one location in the scenery of the game.  It is 
  * connected to other rooms via exits.  For each existing exit, the room 
  * stores a reference to the neighboring room.
  * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author  Matilda Delacourt
+ * @version 2021.11.01
  */
 
 public class Room 
 {
+    // variables for Room class
     private String description;
     private HashMap<String, Room> exits;        // stores exits of this room.
-
+    private ArrayList<Item> items;
+    
     /**
-     * Create a room described "description". Initially, it has
-     * no exits. "description" is something like "a kitchen" or
-     * "an open court yard".
+     * Creates a room described "description". Initially, it has
+     * no exits.
      * @param description The room's description.
      */
     public Room(String description) 
     {
         this.description = description;
+        this.items = new ArrayList<Item>();
         exits = new HashMap<>();
+
     }
 
     /**
@@ -76,6 +80,30 @@ public class Room
             returnString += " " + exit;
         }
         return returnString;
+    }
+    /**
+     * Adds the items to the room
+     * @param item a list of items to be added.
+     */
+    public void addItem(Item[] item)
+    {
+       for(int count = 0; count < item.length; count++){
+        items.add(item[count]);
+        } 
+       
+    }
+      /**
+     * Prints the items, description and weight
+     * @return String text containing the description.
+     */
+    public String getItem()
+    {
+        String text = "";
+        
+        for(int count = 0; count < items.size(); count++){
+           text += items.get(count).itemDescription(); 
+        }
+        return text;
     }
 
     /**

@@ -1,11 +1,11 @@
 /**
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.  
+ * This class is part of the "Maze University" application. 
+ * "Maze University" is a basic, text based adventure game.  
  *
  * This class holds information about a command that was issued by the user.
  * A command currently consists of two parts: a CommandWord and a string
- * (for example, if the command was "take map", then the two parts
- * are TAKE and "map").
+ * (for example, if the command was "go east", then the two parts
+ * are GO and "east").
  * 
  * The way this is used is: Commands are already checked for being valid
  * command words. If the user entered an invalid command (a word that is not
@@ -13,8 +13,8 @@
  *
  * If the command had only one word, then the second word is <null>.
  * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author  Matilda Delacourt
+ * @date 2021.11.01
  */
 
 public class Command
